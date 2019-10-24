@@ -1,15 +1,10 @@
 class Artist 
   attr_accessor :name
 end
-def initialize (artist)
+def initialize (artist ,name)
   @artist = artist
+  @name = name
 end
-artist = 
+artist = Artist.new
+artist.name = "Beyonce"
   
-describe "Artist" do 
-  it "has a name" do
-    artist = Artist.new
-    artist.name = "Beyonce" 
-    expect(artist.name).to eq("Beyonce")
-  end
-end
